@@ -391,7 +391,7 @@ Header END -->
                               </ul>
                             </div>
                             <div class="flex-grow-1 d-block overflow-hidden">
-                              <h6 class="mb-0 mt-1 text-truncate w-75">Webestica crew </h6>
+                              <h6 class="mb-0 mt-1 text-truncate w-75">Vested crew </h6>
                               <div class="small text-secondary">You: Okay thanks, everyone.</div>
                             </div>
                           </div>
@@ -1260,9 +1260,19 @@ Header END -->
           <div class="card-footer" style="position: absolute; ">
             <div class="d-sm-flex align-items-end">
               <textarea class="form-control mb-sm-0 mb-3" data-autoresize placeholder="Type a message" rows="1"></textarea>
-              <button class="btn btn-sm btn-danger-soft ms-sm-2"><i class="fa-solid fa-face-smile fs-6"></i></button>
-              <button class="btn btn-sm btn-secondary-soft ms-2"><i class="fa-solid fa-paperclip fs-6"></i></button>
-              <button class="btn btn-sm btn-primary ms-2"><i class="fa-solid fa-paper-plane fs-6"></i></button>
+              <style>
+                .image-upload>input {
+  display: none;
+}
+              </style>
+              <div class="image-upload">
+                <label for="file-input">
+                  <i class="  btn-sm btn-primary ms-2 fa-solid fa-paperclip"></i>
+                </label>
+              
+                <input id="file-input" type="file" />
+              </div>
+              <button class=" btn-sm btn-primary ms-2"><i class="fa-solid fa-paper-plane fs-6"></i></button>
             </div>
           </div>
         </div>
